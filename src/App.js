@@ -1,23 +1,84 @@
-import logo from './logo.svg';
+
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
+import { Charts } from './charts';
+import { Component } from './component';
+import { DashBoard } from './dashboard';
+import { BaseApp } from './list/base';
+import { SideBar } from './list/sidebar';
+import { Pages } from './pages';
+import { Tables } from './tables';
+import { Utilities } from './utilities';
+
 
 function App() {
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Switch>
+      
+      <Route exact path='/'>
+      <BaseApp />
+      <div className='sidebarandcontent'>
+      <SideBar />
+      <DashBoard />
+      </div>
+      </Route>
+
+      <Route exact path='/dashboard'>
+      <BaseApp />
+      <div className='sidebarandcontent'>
+      <SideBar />
+      <DashBoard />
+      </div>
+      </Route>
+
+      <Route path='/component'>
+      <BaseApp />
+      <div className='sidebarandcontent'>
+      <SideBar />
+      <Component />
+      </div>
+      </Route>
+
+      <Route path='/utilities'>
+      <BaseApp />
+      <div className='sidebarandcontent'>
+      <SideBar />
+      <Utilities />
+      </div>
+      </Route>
+
+      <Route path='/pages'>
+      <BaseApp />
+      <div className='sidebarandcontent'>
+      <SideBar />
+      <Pages />
+      </div>
+      </Route>
+
+      <Route path='/tables'>
+      <BaseApp />
+      <div className='sidebarandcontent'>
+      <SideBar />
+      <Tables />
+      </div>
+      </Route>
+
+      <Route path='/charts'>
+      <BaseApp />
+      <div className='sidebarandcontent'>
+      <SideBar />
+      <Charts />
+      </div>
+      </Route>
+
+     
+
+      
+      </Switch>
     </div>
   );
 }

@@ -2,37 +2,144 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+  border:none;
+  background-color:antiquewhite;
+  color: black;
+  margin:0px;
+  padding:5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidebar{
+  width:20%;
+  height:100vh;
+  background-color: blue;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.sidebarcontent{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding:15px;
+  margin:0px;
+  gap:3rem;
+  color:white;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: inherit;
+  
+ 
 }
 
-.App-link {
-  color: #61dafb;
+
+.sidebarcontent2:hover{
+  color:white;
+  cursor:pointer;
+  border: none;
+  background-color: greenyellow;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebarandcontent{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.inputfield{
+  border: none;
+  border-radius: 7px;
+}
+.dashboardcontent{
+  padding:10px;
+}
+.card1{
+  border: 1px solid black;
+  border-radius: 10px;
+  width:170px;
+  box-shadow:-5px 0px blue;
+  
+}
+.card3{
+  border: 1px solid black;
+  border-radius: 10px;
+  width:170px;
+  box-shadow:-5px 0px green;
+  
+}
+
+.card4{
+  border: 1px solid black;
+  border-radius: 10px;
+  width:170px;
+  box-shadow:-5px 0px rgb(4, 223, 216);
+  
+}
+
+.card5{
+  border: 1px solid black;
+  border-radius: 10px;
+  width:170px;
+  box-shadow:-5px 0px orange;
+  
+}
+.card2{
+  margin-top:25px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.searchbar{
+  border: none;
+  background-color:crimson;
+  color:white;
+  padding:10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:0.5rem;
+}
+
+.content{
+  width:100%;
+  height:100%;
+}
+
+.heading{
+  margin:0;
+  padding:0;
+  display: flex;
+ justify-content: start;
+}
+
+.dashboard:hover{
+  cursor: pointer;
+  
+  background-color:black;
+
+}
+
+.component:hover{
+  cursor: pointer;
+  background-color:black;
+}
+
+.Pages:hover{
+  cursor: pointer;
+  background-color:black;
+}
+
+.Charts:hover{
+  cursor: pointer;
+  background-color:black;
+}
+
+.Utilities:hover{
+  cursor: pointer;
+  background-color:black;
+}
+
+.Tables:hover{
+  cursor: pointer;
+  background-color:black;
 }
